@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>| Pill Fangs |</title>
+  <meta name="description" content=“Band” />
+  <meta name="keywords" content="Pill Fangs, Southern Bird, Southernbird, Qu Junktions, Dan Haywood, Dan Haywood`s New Hawks, punk, rock, indie, psych, music, band" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    window.onload = function() {
+      // This is you alternating colours. The whitespace is required!
+      // rgb(255,255,255) does not work but with spaces it does.
+      var colour2 = 'rgb(255, 255, 255)'
+      var colour1 = 'rgb(0, 0, 0)'
+
+      // Replace these with the paths to your two images.
+      var image1 = './pill fangs-2.png'
+      var image2 = './pill fangs-1.png'
+      
+      // Place this inside <script> tags in the header
+      function alternate(){
+        document.getElementById('Logo').src = 
+          document.getElementById('Logo').src === image1
+        ? image2 : image1;
+
+        document.body.style.background = 
+          document.body.style.background === colour1
+        ? colour2 : colour1;
+      }
+      
+      setInterval(alternate, 1000);
+    }
+  </script>
+</head>
+<body>
+  <img id="Logo" src="./pill fangs-1.png" width="40%">
+</body>
+</html>
